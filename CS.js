@@ -233,3 +233,159 @@
 // }
 
    
+//==================================   JavaScript Operator Practice - Programming Questions  =======================================//
+
+// Q1.Swap Two Numbers Without Using a Third Variable  Use only arithmetic and assignment operators.
+
+// let a = 10;
+// let b = 20;
+
+// a = a+b;  //20+10=30
+// b = a-b;  //30-20=10
+// a = a+b;  //30+10=20
+
+// console.log(a,b);
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Q2.Check If a Number is Even or Odd  Use the modulus (%) operator and logical operators,  using if 
+
+// let num = 4;
+
+// if(num%2==0){
+//     console.log("num is even");
+// }else{
+//     console.log("num is odd");
+// }
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Q3. Find the Maximum of Three Numbers use  only comparison and logical operators.
+
+//  let num1 = 24;
+//  let num2 = 19;
+//  let num3 = 35;
+ 
+// if(num1 >= num2 && num1 >= num3){
+//        console.log("maximum num is",num1);
+//  } else if(num2>=num1&&num2>=num3){
+//     console.log("maximum num is",num2);
+// } else{
+//     console.log("maximum num is",num3);
+// }
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// q4.Check if a Character is a Vowel or Consonant  Use logical (||) and comparison (==) operators.
+
+//  let char = 'm'; 
+//  if (char == 'a' || char == 'e' || char == 'i' || char == 'o' || char == 'u') {      //the the con check if char==a,e,i,o,u then print char is vowel else print char is a const
+//       console.log(" char is a vowel=",char);
+//   }  
+//  else if  (char >= 'a' && char <= 'z') {                                         //this also check char is between (a-z) or not
+//      console.log("char is a consonant=",char);
+//  } 
+//else {
+//    console.log(" char is not an alphabet=",char);                                //if it's not then it will print char is not an alphabet
+//}
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Q5. Return true Only if Both Inputs Are Non-Zero Numbers   Use logical AND (&&) operator.
+
+// let a = 7;
+// let b = 11;
+
+// if(a && b){
+//     console.log("True");
+// }else{
+//     console.log("False");
+// }
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Q6. Check if a Number Lies Between Two Given Number  Use only < and > operators (use if )
+
+// let num = 24;
+// let num1 = 1;
+// let num2 = 100;
+
+// if(num > num1 && num < num2){
+//     console.log("number lies between given number");
+// }else{
+//     console.log("number did not lies between given number");
+// }
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Q7. Evaluate the Result of Postfix and Prefix Operators
+//    let a = 5;
+//    let b = a++ + ++a;
+   // What are the values of a and b?
+
+   // console.log(" a =",a);     //expect 7
+// console.log(" b =",b);      // expect 12    
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//Q8.  Predict the Output Using Logical Operators
+//     let x = 0;
+//     let y = 10;
+//     let result1 = x && y;
+
+// let x = 0;                     
+// let y = 10;          
+// let result1= x && y;
+// let result2 = x|| y;       
+
+// console.log("result1 =",result1);    //0
+// console.log("result2 =",result2);    //10
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Q9. Calculate Square of a Number Using Assignment Operator   Use *= operator only.
+
+// let num = 7;
+
+// if(num === 0){
+//     console.log("square is 0");
+// }else{    
+//     num *= num;
+//     console.log("squre is",num);
+// }
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Q10. Write a Simple Calculator Function   That takes two numbers and an operator (+, -, *, /, %) and returns the result.
+
+// function simpleCalculator(num1, num2, operator) {
+//     let result;
+
+//     if (operator === '+') {
+//         result = num1 + num2;
+//     } else if (operator === '-') {
+//         result = num1 - num2;
+//     } else if (operator === '*') {
+//         result = num1 * num2;
+//     } else if (operator === '/') {
+//         if (num2 !== 0) {
+//             result = num1 / num2;
+//         } else {
+//             return "Error: Number is not divisible by zero.";
+//         }
+//     } else if (operator === '%') {
+//         result = num1 % num2;
+//     } else {
+//         return "Error: Invalid operator.";
+//     }
+
+//     return result;
+// }
+
+
+// console.log(simpleCalculator(10, 5, '+')); // Output: 15
+// console.log(simpleCalculator(10, 5, '/')); // Output: 2
+// console.log(simpleCalculator(10, 0, '/')); // Output: Error: Division by zero is not allowed.
+// console.log(simpleCalculator(10, 5, '^')); // Output: Error: Invalid operator.
+
+
